@@ -47,7 +47,6 @@ kurtosis(): kurtosis of the frequency domain signal
 bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
 angle(): Angle between to vectors.
 
-
 ## Data Processing and Transformations
 
 1. Merges the training and the test sets to create one data set.
@@ -56,4 +55,4 @@ angle(): Angle between to vectors.
 4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Note: '''reshape2''' and '''data.table''' packages are required, the scrip will take care to install/load the packages.
+Note: "reshape2" and "data.table" packages are required, the scrip will take care to install/load the packages.
