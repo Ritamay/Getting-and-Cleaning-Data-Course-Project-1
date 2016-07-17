@@ -68,7 +68,10 @@ tidy_data   = dcast(melt_data, subject + activity_Label ~ variable, mean)
 
 
 #############################################################
-# Save tidy data into Excel and open the file
+# Save tidy data into txt file format
 #############################################################
+write.table(tidy_data, "Tidy_Data.txt", row.names = FALSE)
+
+# save a separate csv file format for review purpose and auto-open
 write.csv(tidy_data, "Tidy_Data.csv")
 shell.exec(paste0(getwd(), "/Tidy_Data.csv"))
